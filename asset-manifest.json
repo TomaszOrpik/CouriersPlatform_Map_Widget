@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CouriersPlatform_Map_Widget/static/css/main.f09a4847.chunk.css",
+    "main.js": "/CouriersPlatform_Map_Widget/static/js/main.8b17cb16.chunk.js",
+    "main.js.map": "/CouriersPlatform_Map_Widget/static/js/main.8b17cb16.chunk.js.map",
+    "runtime-main.js": "/CouriersPlatform_Map_Widget/static/js/runtime-main.8f5d3749.js",
+    "runtime-main.js.map": "/CouriersPlatform_Map_Widget/static/js/runtime-main.8f5d3749.js.map",
+    "static/js/2.22c45290.chunk.js": "/CouriersPlatform_Map_Widget/static/js/2.22c45290.chunk.js",
+    "static/js/2.22c45290.chunk.js.map": "/CouriersPlatform_Map_Widget/static/js/2.22c45290.chunk.js.map",
+    "static/js/3.a1ea189a.chunk.js": "/CouriersPlatform_Map_Widget/static/js/3.a1ea189a.chunk.js",
+    "static/js/3.a1ea189a.chunk.js.map": "/CouriersPlatform_Map_Widget/static/js/3.a1ea189a.chunk.js.map",
+    "index.html": "/CouriersPlatform_Map_Widget/index.html",
+    "static/css/main.f09a4847.chunk.css.map": "/CouriersPlatform_Map_Widget/static/css/main.f09a4847.chunk.css.map",
+    "static/js/2.22c45290.chunk.js.LICENSE.txt": "/CouriersPlatform_Map_Widget/static/js/2.22c45290.chunk.js.LICENSE.txt",
+    "static/media/courierIcon.c299fccf.png": "/CouriersPlatform_Map_Widget/static/media/courierIcon.c299fccf.png",
+    "static/media/packageIcon.f9722f30.png": "/CouriersPlatform_Map_Widget/static/media/packageIcon.f9722f30.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f5d3749.js",
+    "static/js/2.22c45290.chunk.js",
+    "static/css/main.f09a4847.chunk.css",
+    "static/js/main.8b17cb16.chunk.js"
+  ]
+}
