@@ -34,6 +34,7 @@ Aplikację można przetestować za pomocą testu automatycznego, by wykonać tes
 -  Podmienić zmienne testowe w pliku `src/automation_test/test-environment.js`
 -  Uruchomić aplikację komendą `npm run start`
 -  Po uruchomieniu aplikacji oraz backendu test przeprowadza się komendą `npm run automationTest`
+-  Testy można przeprowadzić w różnych środowiskach przekazując do komendy flagi `firebase` (do testów z wykorzystaniem firebase websocket) oraz `production` (do testów z wykorzystaniem własnego websocketa i bazy danych mongoDB)
 
 ### Wersja Produkcyjna
 
