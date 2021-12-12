@@ -71,8 +71,10 @@ const MapParentContainer = (props: IProps) => {
 
     useEffect(() => {
         if (!wasHandshake && ws.readyState === ws.OPEN) {
-            ws.send(JSON.stringify({ id: props.id, type: props.type }));
-            setWasHandshake(true);
+            if (props.id) {
+                ws.send(JSON.stringify({ id: props.id, type: props.type }));
+                setWasHandshake(true);
+            }
         }
         if (props.type !== MapType.package) {
             getWaypointsForCourier(props.id);
@@ -102,11 +104,15 @@ const MapParentContainer = (props: IProps) => {
                 },
 
             };
-            const response = await fetch(`${API_ENDPOINT}/couriers/route/${id}`, request)
-                .then(response => response.json()
-                    .then(data => data));
+            if (id) {
+                const response = await fetch(`${API_ENDPOINT}/couriers/route/${id}`, request)
+                    .then(response => response.json()
+                        .then(data => data));
 
-            setCourierWaypoints(response as unknown as Position[]);
+                setCourierWaypoints(response as unknown as Position[]);
+            } else {
+                console.log('%cMissing Id', 'color: red');
+            }
         }
     }
 
@@ -141,12 +147,16 @@ const MapParentContainer = (props: IProps) => {
                     'Accept': 'application/json'
                 }
             };
-            const response = await fetch(`${API_ENDPOINT}/packages/route/${id}`, request)
-                .then(response => response.json()
-                    .then(data => data));
+            if (id) {
+                const response = await fetch(`${API_ENDPOINT}/packages/route/${id}`, request)
+                    .then(response => response.json()
+                        .then(data => data));
 
-            setPackageCourierId(response.courierId);
-            setPackageWaypoints(response.positions as unknown as Position[]);
+                setPackageCourierId(response.courierId);
+                setPackageWaypoints(response.positions as unknown as Position[]);
+            } else {
+                console.log('%cMissing Id', 'color: red');
+            }
         }
     }
 
