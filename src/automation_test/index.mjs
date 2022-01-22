@@ -37,7 +37,7 @@ import { PRODUCTION_API, LOCAL_API } from "./test-environment.mjs";
 
     await page.waitForTimeout(4000);
 
-    //await page.screenshot({ path: `src/automation_test/screenshots/${(Math.random() * 100).toString()}.png` });
+    await page.screenshot({ path: `src/automation_test/screenshots/${(Math.random() * 100).toString()}.png` });
 
-    //await browser.close();
+    await browser.close();
 })();
